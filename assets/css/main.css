@@ -87,12 +87,15 @@ header {
     /* Header styles */
   }
   
+  /* Navigation styles */
   nav {
-    /* Navigation styles */
+    height: 60px; 
+    line-height: 60px; 
   }
   
   #main-content {
     /* Main content styles */
+    padding: 5em;
   }
   
   footer {
