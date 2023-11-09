@@ -47,3 +47,54 @@ table {
 	border-spacing: 0;
 }
 
+/* Typography */
+html {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px; /* Default font size */
+    line-height: 1.6; /* Default line height */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    /* Additional styles */
+  }
+  
+  p {
+    margin: 0;
+    padding: 0;
+    /* Additional styles */
+  }
+
+  /* General Styles */
+body {
+    background-color: #000; /* Black background as per your request */
+    color: #fff; /* Default text color */
+  }
+  
+  a {
+    color: #0dab22; /* Default link color */
+    text-decoration: none;
+  }
+  
+  button {
+    /* Button styles */
+  }
+
+  /* Layout Components */
+header {
+    /* Header styles */
+  }
+  
+  nav {
+    /* Navigation styles */
+  }
+  
+  #main-content {
+    /* Main content styles */
+  }
+  
+  footer {
+    /* Footer styles */
+  }
