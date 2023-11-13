@@ -69,13 +69,17 @@ html {
 
   /* General Styles */
 body {
-    background-color: #000; /* Black background as per your request */
-    color: #fff; /* Default text color */
+    background-color: #000; 
+    color: #fff; 
   }
   
   a {
-    color: #0dab22; /* Default link color */
+    color: #fff; 
     text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0dab22;
   }
   
   button {
@@ -111,6 +115,19 @@ nav {
 .nav-social-links li:last-child {
   margin-right: 0;
 }
+
+.logo a {
+  font-size: 24px; 
+  font-weight: bold; 
+  text-decoration: none; 
+}
+
+.logo a {
+  font-size: 24px; 
+  font-weight: bold; 
+  text-decoration: none; 
+}
+
   
   #main-content {
     /* Main content styles */
