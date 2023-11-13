@@ -88,10 +88,29 @@ header {
   }
   
   /* Navigation styles */
-  nav {
-    height: 60px; 
-    line-height: 60px; 
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+.nav-social-links {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none; 
+}
+
+.nav-social-links li {
+  margin-right: 20px;
+}
+
+.nav-social-links li:last-child {
+  margin-right: 0;
+}
   
   #main-content {
     /* Main content styles */
