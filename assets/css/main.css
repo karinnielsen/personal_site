@@ -49,6 +49,7 @@ table {
 
 /* Typography */
 html {
+    height: 100%;
     font-family: 'Roboto Mono', monospace;
     font-size: 16px; /* Default font size */
     line-height: 1.6; /* Default line height */
@@ -69,8 +70,15 @@ html {
 
   /* General Styles */
 body {
+    height: 100%;
+    margin: 0;
     background-color: #000; 
     color: #fff; 
+  }
+
+  main {
+    min-height: 100vh; 
+    padding-bottom: 60px; 
   }
   
   a {
@@ -96,6 +104,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100; 
   height: 60px;
   line-height: 60px;
   padding: 0 20px;
@@ -131,9 +142,17 @@ nav {
   
   #main-content {
     /* Main content styles */
-    padding: 5em;
+    padding: 1em;
   }
   
   footer {
-    /* Footer styles */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
   }
