@@ -146,31 +146,56 @@ nav {
 
 #main-content {
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center-align items horizontally */
+  flex-direction: column; /* Keep column direction */
+  align-items: center; /* Center-align items horizontally for mobile */
   justify-content: flex-start; /* Align content to the start vertically */
-  padding: 1em; /* Adequate spacing for mobile devices */
-  /* Other styles as needed */
+  padding: 1em; /* Spacing for mobile devices */
+  text-align: center; /* Center text alignment by default for mobile */
+}
+
+#main-content h1 {
+  font-size: 2em; /* Font size for h1 */
+  font-weight: bold;
+  margin-bottom: 1em; /* Space below h1 */
+}
+
+#main-content p {
+  font-size: 1em; /* Font size for p */
+  /* Additional styling for p */
 }
 
 @media screen and (min-width: 768px) { /* Medium screens (tablets) */
   #main-content {
-    flex-direction: row; /* Horizontal layout */
-    justify-content: space-around; /* Distribute space around items */
-    align-items: flex-start; /* Align items to the start vertically */
     padding: 2em; /* Adjust padding */
-    /* Other adjustments as needed */
+    align-items: flex-start; /* Left-align items in flex container */
+    text-align: left; /* Left-align text */
+  }
+
+  #main-content h1 {
+    font-size: 2.5em; /* Larger font size for h1 on bigger screens */
+  }
+
+  #main-content p {
+    font-size: 1.2em; /* Slightly larger font size for p */
   }
 }
 
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
   #main-content {
-    justify-content: space-between; /* Space between items */
-    align-items: flex-start; /* Keep items aligned to the top */
     padding: 3em; /* Adjust padding */
-    /* Further styling adjustments */
+    align-items: flex-start; /* Left-align items in flex container */
+    text-align: left; /* Left-align text */
+  }
+
+  #main-content h1 {
+    font-size: 3em; /* Even larger font size for h1 on desktop */
+  }
+
+  #main-content p {
+    font-size: 1.4em; /* Larger font size for p */
   }
 }
+
   
   footer {
     display: flex;
@@ -184,6 +209,7 @@ nav {
     padding: 0 10px; /* Reduce padding for smaller screens */
     flex-direction: column; /* Stack content vertically on small screens */
     text-align: center; /* Center-align text */
+    background-color: #000; /* Darken the background */
   }
 
   @media screen and (min-width: 768px) { /* Adjustments for medium screens */
