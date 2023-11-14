@@ -155,18 +155,20 @@ nav {
 
 @media screen and (min-width: 768px) { /* Medium screens (tablets) */
   #main-content {
-    flex-direction: row; /* Horizontal layout for larger screens */
-    justify-content: space-between; /* Distribute space around items */
-    padding: 2em; /* More space for larger screens */
-    /* Additional adjustments as needed */
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-around; /* Distribute space around items */
+    align-items: flex-start; /* Align items to the start vertically */
+    padding: 2em; /* Adjust padding */
+    /* Other adjustments as needed */
   }
 }
 
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
   #main-content {
-    justify-content: space-between; /* Maximize space between items */
-    padding: 3em; /* Even more space for desktops */
-    /* Further styling adjustments for large screens */
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start; /* Keep items aligned to the top */
+    padding: 3em; /* Adjust padding */
+    /* Further styling adjustments */
   }
 }
   
