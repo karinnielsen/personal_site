@@ -198,28 +198,28 @@ nav {
 }
 
   
-  footer {
-    display: flex;
-    justify-content: center; /* Center the content for mobile */
-    align-items: center;
-    position: sticky;
-    bottom: 0;
-    z-index: 100;
-    height: 60px; /* Adjust height for better touch interaction */
-    line-height: 60px;
-    padding: 0 10px; /* Reduce padding for smaller screens */
-    flex-direction: column; /* Stack content vertically on small screens */
-    text-align: center; /* Center-align text */
-    background-color: #000; /* Darken the background */
-  }
+footer {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically on small screens */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  min-height: 60px; /* Use min-height */
+  padding: 10px; /* Add padding */
+  text-align: center; /* Center-align text */
+  background-color: #000; /* Ensure visibility (change color as needed) */
+}
 
-  @media screen and (min-width: 768px) { /* Adjustments for medium screens */
-    footer {
-      justify-content: space-between; /* Space out content for wider screens */
-      flex-direction: row; /* Return to horizontal layout */
-      padding: 0 20px; /* Increase padding for larger screens */
-    }
+@media screen and (min-width: 768px) {
+  footer {
+    flex-direction: row; /* Horizontal layout for larger screens */
+    justify-content: space-between; /* Space out content */
+    padding: 0 20px; /* Adjust padding */
+    min-height: 60px; /* Maintain min-height */
   }
+}
   
   @media screen and (min-width: 1024px) { /* Adjustments for large screens */
     footer {
