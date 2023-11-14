@@ -59,13 +59,11 @@ html {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    /* Additional styles */
   }
   
   p {
     margin: 0;
     padding: 0;
-    /* Additional styles */
   }
 
   /* General Styles */
@@ -95,6 +93,7 @@ body {
   }
 
   /* Layout Components */
+
 header {
     /* Header styles */
   }
@@ -112,6 +111,24 @@ nav {
   padding: 0 20px;
 }
 
+.logo a {
+  font-size: 20px; 
+  font-weight: bold; 
+  text-decoration: none; 
+}
+
+@media screen and (min-width: 768px) {
+  .logo a {
+    font-size: 1.5em; 
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo a {
+    font-size: 1.75em;
+  }
+}
+
 .nav-social-links {
   display: flex;
   align-items: center;
@@ -127,22 +144,10 @@ nav {
   margin-right: 0;
 }
 
-.logo a {
-  font-size: 24px; 
-  font-weight: bold; 
-  text-decoration: none; 
-}
-
-.logo a {
-  font-size: 24px; 
-  font-weight: bold; 
-  text-decoration: none; 
-}
-
-  
   #main-content {
-    /* Main content styles */
+    width: 90%;
     padding: 1em;
+    margin: 0 auto;
   }
   
   footer {
@@ -152,7 +157,7 @@ nav {
   position: sticky;
   bottom: 0;
   z-index: 100;
-  height: 60px;
+  height: 30px;
   line-height: 60px;
   padding: 0 20px;
   }
