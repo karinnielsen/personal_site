@@ -147,13 +147,14 @@ nav {
 #main-content {
   display: flex;
   flex-direction: column; /* Keep column direction */
-  align-items: center; /* Center-align items horizontally for mobile */
+  align-items: flex-start; /* Align items to the start (left) horizontally */
   justify-content: flex-start; /* Align content to the start vertically */
   padding: 1em; /* Spacing for mobile devices */
-  text-align: center; /* Center text alignment by default for mobile */
+  text-align: left; /* Left-align text for all screen sizes */
 }
 
 #main-content h1 {
+  align-items: flex-start; /* Left-align items in flex container */
   font-size: 2em; /* Font size for h1 */
   font-weight: bold;
   margin-bottom: 1em; /* Space below h1 */
@@ -161,14 +162,16 @@ nav {
 
 #main-content p {
   font-size: 1em; /* Font size for p */
-  /* Additional styling for p */
+  font-family: sans-serif; /* Use a sans-serif font */
+  font-weight: 200; /* Lighter font weight */
+  line-height: 1.6; /* Increase line height for better readability */
+  letter-spacing: 0.02em; /* Slight increase in letter spacing */
+  margin-bottom: 1em; /* Space after each paragraph */
 }
 
 @media screen and (min-width: 768px) { /* Medium screens (tablets) */
   #main-content {
     padding: 2em; /* Adjust padding */
-    align-items: flex-start; /* Left-align items in flex container */
-    text-align: left; /* Left-align text */
   }
 
   #main-content h1 {
@@ -183,8 +186,6 @@ nav {
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
   #main-content {
     padding: 3em; /* Adjust padding */
-    align-items: flex-start; /* Left-align items in flex container */
-    text-align: left; /* Left-align text */
   }
 
   #main-content h1 {
