@@ -152,7 +152,7 @@ header {
   flex-direction: column; /* Keep column direction */
   align-items: flex-start; /* Align items to the start (left) horizontally */
   justify-content: flex-start; /* Align content to the start vertically */
-  padding: 1em; /* Spacing for mobile devices */
+  padding: 70px 1em 1em 1em; /* top, right, bottom, left */
   text-align: left; /* Left-align text for all screen sizes */
 }
 
@@ -174,8 +174,9 @@ header {
 
 @media screen and (min-width: 768px) { /* Medium screens (tablets) */
   #main-content {
-    padding: 2em; /* Adjust padding */
+    padding: 70px 2em 2em 2em; /* Adjust padding for larger screens */
   }
+}
 
   #main-content h1 {
     font-size: 2.5em; /* Larger font size for h1 on bigger screens */
@@ -188,8 +189,9 @@ header {
 
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
   #main-content {
-    padding: 3em; /* Adjust padding */
+    padding: 70px 3em 3em 3em; /* Adjust padding for desktop screens */
   }
+}
 
   #main-content h1 {
     font-size: 3em; /* Even larger font size for h1 on desktop */
