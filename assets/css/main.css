@@ -144,11 +144,31 @@ nav {
   margin-right: 0;
 }
 
+#main-content {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: flex-start; /* Align content to the start vertically */
+  padding: 1em; /* Adequate spacing for mobile devices */
+  /* Other styles as needed */
+}
+
+@media screen and (min-width: 768px) { /* Medium screens (tablets) */
   #main-content {
-    width: 90%;
-    padding: 1em;
-    margin: 0 auto;
+    flex-direction: row; /* Horizontal layout for larger screens */
+    justify-content: space-between; /* Distribute space around items */
+    padding: 2em; /* More space for larger screens */
+    /* Additional adjustments as needed */
   }
+}
+
+@media screen and (min-width: 1024px) { /* Large screens (desktops) */
+  #main-content {
+    justify-content: space-between; /* Maximize space between items */
+    padding: 3em; /* Even more space for desktops */
+    /* Further styling adjustments for large screens */
+  }
+}
   
   footer {
     display: flex;
