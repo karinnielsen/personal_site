@@ -223,10 +223,35 @@ footer {
     padding: 0 20px; /* Adjust padding */
     min-height: 60px; /* Maintain min-height */
   }
-}
   
-  @media screen and (min-width: 1024px) { /* Adjustments for large screens */
-    footer {
-      /* Additional styles if needed for larger screens */
-    }
+  #handcoded-info {
+    order: 2; /* Middle */
   }
+
+  #last-updated {
+    order: 3; /* Right */
+  }
+
+  #copyright {
+    order: 1; /* Left */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    /* Additional styles if needed for larger screens */
+  }
+
+  #handcoded-info {
+    order: 2; /* Middle */
+  }
+
+  #last-updated {
+    order: 3; /* Right */
+  }
+
+  #copyright {
+    order: 1; /* Left */
+  }
+}
+
