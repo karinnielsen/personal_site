@@ -85,7 +85,7 @@ body {
   }
   
   a:hover {
-    color: #0dab22;
+    color: #AAFF00;
   }
   
   button {
@@ -214,6 +214,34 @@ footer {
   padding: 10px; /* Add padding */
   text-align: center; /* Center-align text */
   background-color: #000; /* Ensure visibility (change color as needed) */
+}
+
+#handcoded-info {
+  font-size: 0.8em; /* Font size for p */
+  font-family: sans-serif; /* Use a sans-serif font */
+  font-weight: 200; /* Lighter font weight */
+  line-height: 1.6; /* Increase line height for better readability */
+  letter-spacing: 0.02em; /* Slight increase in letter spacing */
+  margin-bottom: 1em; /* Space after each paragraph */
+}
+
+#last-updated {
+  font-size: 0.8em; /* Font size for p */
+  font-family: sans-serif; /* Use a sans-serif font */
+  font-weight: 200; /* Lighter font weight */
+  font-style: italic;
+  line-height: 1.6; /* Increase line height for better readability */
+  letter-spacing: 0.02em; /* Slight increase in letter spacing */
+  margin-bottom: 1em; /* Space after each paragraph */ 
+}
+
+#copyright {
+  font-size: 0.5em; /* Font size for p */
+  font-family: sans-serif; /* Use a sans-serif font */
+  font-weight: 200; /* Lighter font weight */
+  line-height: 1.6; /* Increase line height for better readability */
+  letter-spacing: 0.02em; /* Slight increase in letter spacing */
+  margin-bottom: 1em; /* Space after each paragraph */
 }
 
 @media screen and (min-width: 768px) {
