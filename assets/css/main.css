@@ -156,9 +156,21 @@ header {
   text-align: left; /* Left-align text for all screen sizes */
 }
 
+@media screen and (min-width: 768px) { /* Medium screens (tablets) */
+  #main-content {
+    padding: 150px 6em 6em 6em; /* Adjust padding for larger screens */
+  }
+}
+
+@media screen and (min-width: 1024px) { /* Large screens (desktops) */
+  #main-content {
+    padding: 150px 10em 10em 10em; /* Adjust padding for desktop screens */
+  }
+}
+
 #main-content h1 {
   align-items: flex-start; /* Left-align items in flex container */
-  font-size: 2em; /* Font size for h1 */
+  font-size: 1.5em; /* Font size for h1 */
   font-weight: bold;
   margin-bottom: 1em; /* Space below h1 */
 }
@@ -172,12 +184,6 @@ header {
   margin-bottom: 1em; /* Space after each paragraph */
 }
 
-@media screen and (min-width: 768px) { /* Medium screens (tablets) */
-  #main-content {
-    padding: 70px 2em 2em 2em; /* Adjust padding for larger screens */
-  }
-}
-
   #main-content h1 {
     font-size: 2.5em; /* Larger font size for h1 on bigger screens */
   }
@@ -189,7 +195,7 @@ header {
 
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
   #main-content {
-    padding: 70px 3em 3em 3em; /* Adjust padding for desktop screens */
+    padding: 70px 5em 5em 5em; /* Adjust padding for desktop screens */
   }
 }
 
