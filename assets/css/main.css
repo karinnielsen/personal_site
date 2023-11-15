@@ -152,7 +152,7 @@ header {
   flex-direction: column; /* Keep column direction */
   align-items: flex-start; /* Align items to the start (left) horizontally */
   justify-content: flex-start; /* Align content to the start vertically */
-  padding: 70px 1.5em 1.5em 1.5em; /* top, right, bottom, left */
+  padding: 85px 1.5em 1.5em 1.5em; /* top, right, bottom, left */
   text-align: left; /* Left-align text for all screen sizes */
 }
 
