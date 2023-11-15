@@ -225,16 +225,16 @@ footer {
   margin-bottom: 1em; /* Space after each paragraph */
 }
 
-#handcoded-info, #last-updated {
+#handcoded-info, #last-updated, #copyright {
   font-size: 0.8em;
+}
+
+#handcoded-info {
+  font-size: 1em;
 }
 
 #last-updated {
   font-style: italic;
-}
-
-#copyright {
-  font-size: 0.5em;
 }
 
 @media screen and (min-width: 768px) {

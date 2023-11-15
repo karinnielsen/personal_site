@@ -24,4 +24,18 @@ function updateCopyrightYear() {
   document.addEventListener('DOMContentLoaded', function() {
     updateCopyrightYear();
   });
-  
+
+  // Handcoded with emojis animation
+const emojis = ["🍸", "😅", "💜"]; 
+let emojiIndex = 0;
+
+function cycleEmojis() {
+  const handcodedInfo = document.getElementById('handcoded-info');
+  if (handcodedInfo) {
+    handcodedInfo.textContent = `Handcoded with ${emojis[emojiIndex]} in London`;
+    emojiIndex = (emojiIndex + 1) % emojis.length; // Cycle through the emojis
+  }
+}
+
+// Update emoji every 2 seconds (2000 milliseconds)
+setInterval(cycleEmojis, 2000);
