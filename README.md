@@ -1,4 +1,4 @@
-# Karin's Personal Website
+# Karin's Personal Site
 
 This is the source code for my personal website, where I share my work, thoughts, and play.
 
@@ -10,7 +10,7 @@ The website serves as a digital portfolio and blog, showcasing my projects, skil
 * **Essays:** Where I write about topics I'm passionate about [coming soon]
 * **Contact:** Ways to follow and get in touch.
 
-## Technologies Used
+## Stack
 HTML/CSS/JavaScript
 
 ## Structure
