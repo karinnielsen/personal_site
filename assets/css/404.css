@@ -62,20 +62,33 @@ html {
   }
 
   h1 {
-    font-size: 1.8em; 
+    font-size: 1.5em; 
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 0.5em;
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3em; 
+    }
   }
   
   p {
     margin: 0;
     padding: 0;
-    font-size: 1.em; 
+    font-size: 1em; 
     font-weight: 400;
     line-height: 1.2;
   }
 
+  @media screen and (min-width: 768px) {
+    p {
+        font-size: 1.5em; 
+    }
+  }
+
+ 
   /* General Styles */
 body {
     height: 100%;
@@ -94,19 +107,16 @@ body {
     color: #fff; 
     text-decoration: underline     
   }
+
+  @media screen and (min-width: 768px) {
+    a {
+        font-size: 1.5em; 
+    }
+  }
+
   
   a:hover {
     color: #AAFF00;
-  }
-  
-  button {
-    /* Button styles */
-  }
-
-  /* Layout Components */
-
-header {
-    /* Header styles */
   }
 
   .centered-content {
@@ -118,6 +128,14 @@ header {
     padding: 20px;
   }
 
+  @media screen and (min-width: 768px) {
+    .centered-content {
+        max-width: 1100px; /* Set a max-width for your content */
+        margin: 0 auto; /* Center the content block */
+        padding: 60px; /* Increase padding for more breathing space */
+    }
+  }
+
   #img-large-centered {
     max-width: 100%;  /* Ensures the image is never larger than the viewport */
     width: auto;  /* Maintains the aspect ratio */
@@ -125,3 +143,9 @@ header {
     padding: 40px;
   }
   
+  @media screen and (min-width: 768px) {
+    #img-large-centered {
+        max-width: 60%; /* Adjust the image size */
+        padding: 30px; /* Adjust the padding around the image */
+    }
+  }

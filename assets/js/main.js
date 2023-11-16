@@ -19,7 +19,6 @@ function updateCopyrightYear() {
     const copyrightDiv = document.getElementById('copyright');
     copyrightDiv.textContent = `© ${currentYear} Karin Nielsen. All Rights Reserved.`; // Update the text content
   }
-  
   // Update the copyright year when the document loads
   document.addEventListener('DOMContentLoaded', function() {
     updateCopyrightYear();
@@ -36,6 +35,5 @@ function cycleEmojis() {
     emojiIndex = (emojiIndex + 1) % emojis.length; // Cycle through the emojis
   }
 }
-
 // Update emoji every 2 seconds (2000 milliseconds)
 setInterval(cycleEmojis, 2000);
