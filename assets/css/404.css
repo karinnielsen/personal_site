@@ -62,7 +62,7 @@ html {
   }
 
   h1 {
-    font-size: 2em; 
+    font-size: 1.8em; 
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 0.5em;
@@ -71,17 +71,16 @@ html {
   p {
     margin: 0;
     padding: 0;
-    font-size: 1.2em; 
+    font-size: 1.em; 
     font-weight: 400;
     line-height: 1.2;
-    margin-bottom: 0.5em;
   }
 
   /* General Styles */
 body {
     height: 100%;
     margin: 0;
-    padding-top: 60px;
+    padding-top: 30px;
     background-color: #000; 
     color: #fff; 
   }
@@ -93,7 +92,7 @@ body {
   
   a {
     color: #fff; 
-    text-decoration: none;
+    text-decoration: underline     
   }
   
   a:hover {
