@@ -79,14 +79,14 @@ body {
     padding-bottom: 60px; 
   }
   
-  a {
+  /* a {
     color: #fff; 
     text-decoration: none;
   }
   
   a:hover {
     color: #AAFF00;
-  }
+  } */
   
   button {
     /* Button styles */
@@ -117,7 +117,12 @@ header {
 .logo a {
   font-size: 20px; 
   font-weight: bold; 
+  color: #fff; 
   text-decoration: none; 
+}
+
+.logo a:hover {
+  color: #AAFF00;
 }
 
 @media screen and (min-width: 768px) {
@@ -132,22 +137,31 @@ header {
   }
 }
 
-.nav-social-links {
+.nav-links {
   display: flex;
   align-items: center;
   padding: 0;
   list-style: none; 
 }
 
-.nav-social-links li {
+.nav-links li {
   margin-right: 20px;
 }
 
-.nav-social-links li:last-child {
+.nav-links li:last-child {
   margin-right: 0;
 }
 
-#main-content {
+.nav-links a {
+  color: #fff; 
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #AAFF00;
+}
+
+.main-content {
   display: flex;
   flex-direction: column; /* Keep column direction */
   align-items: flex-start; /* Align items to the start (left) horizontally */
@@ -156,14 +170,15 @@ header {
   text-align: left; /* Left-align text for all screen sizes */
 }
 
-#main-content h1 {
+.main-content h1 {
   align-items: flex-start; /* Left-align items in flex container */
   font-size: 1.5em; /* Font size for h1 */
   font-weight: bold;
   margin-bottom: 1em; /* Space below h1 */
+  color: #aa00ff;
 }
 
-#main-content p {
+.main-content p {
   font-size: 1em; /* Font size for p */
   font-family: sans-serif; /* Use a sans-serif font */
   font-weight: 200; /* Lighter font weight */
@@ -172,31 +187,44 @@ header {
   margin-bottom: 1em; /* Space after each paragraph */
 }
 
+.main-content a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.main-content a:hover {
+  color: #AAFF00;
+}
+
+
+
+
+
 @media screen and (min-width: 768px) { /* Medium screens (tablets) */
-  #main-content {
+  .main-content {
     padding: 150px 6em 6em 6em; /* Adjust padding for larger screens */
   }
 
-  #main-content h1 {
+  .main-content h1 {
     font-size: 2.5em; /* Larger font size for h1 on bigger screens */
   }
 
-  #main-content p {
+  .main-content p {
     font-size: 1.2em; /* Slightly larger font size for p */
   }
 }
 
 
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
-  #main-content {
+  .main-content {
     padding: 150px 8em 8em 8em; /* Adjust padding for desktop screens */
   }
 
-  #main-content h1 {
+  .main-content h1 {
     font-size: 3em; /* Even larger font size for h1 on desktop */
   }
 
-  #main-content p {
+  .main-content p {
     font-size: 1.4em; /* Larger font size for p */
   }
 }
