@@ -110,8 +110,8 @@ header {
     z-index: 100;
     height: 60px;
     line-height: 60px;
-    padding: 0 20px;
-    background-color: #000; /* Ensures visibility */
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.8); /* 50% transparent black */
   }
 
 .logo a {
@@ -133,7 +133,7 @@ header {
 
 @media screen and (min-width: 1024px) {
   .logo a {
-    font-size: 1.75em;
+    font-size: 2em;
   }
 }
 
@@ -159,6 +159,18 @@ header {
 
 .nav-links a:hover {
   color: #AAFF00;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-links {
+    font-size: 1.5em; 
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nav-links {
+    font-size: 1.5em;
+  }
 }
 
 .main-content {
@@ -197,9 +209,6 @@ header {
 }
 
 
-
-
-
 @media screen and (min-width: 768px) { /* Medium screens (tablets) */
   .main-content {
     padding: 150px 6em 6em 6em; /* Adjust padding for larger screens */
@@ -217,7 +226,7 @@ header {
 
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
   .main-content {
-    padding: 150px 8em 8em 8em; /* Adjust padding for desktop screens */
+    padding: 150px 23em 23em 23em; /* Adjust padding for desktop screens */
   }
 
   .main-content h1 {
@@ -288,7 +297,7 @@ footer {
 
 @media screen and (min-width: 1024px) {
   footer {
-    /* Additional styles if needed for larger screens */
+    padding: 0 10em; /* Adjust padding */
   }
 
   #handcoded-info {
