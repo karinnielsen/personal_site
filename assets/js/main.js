@@ -1,15 +1,12 @@
 // Function to update the last updated date
-
 function updateLastUpdatedDate() {
-    var lastUpdatedDiv = document.getElementById('last-updated');
-    if (lastUpdatedDiv) { // Check if the element exists
-      var today = new Date();
-      var dateString = today.toLocaleDateString('en-GB', {
-        year: 'numeric', month: 'long', day: 'numeric'
-      });
-      lastUpdatedDiv.textContent = 'Last updated ' + dateString;
-    }
+  var lastUpdatedDiv = document.getElementById('last-updated');
+  if (lastUpdatedDiv) {
+      // Manually set the last updated date here
+      var lastUpdatedDate = "8 March 2024"; // Format: "Day Month Year"
+      lastUpdatedDiv.textContent = 'Last updated ' + lastUpdatedDate;
   }
+}
   
   document.addEventListener('DOMContentLoaded', updateLastUpdatedDate);
 
@@ -25,7 +22,7 @@ function updateCopyrightYear() {
   });
 
   // Handcoded with emojis animation
-const emojis = ["🍸", "💜", "🤬"]; 
+const emojis = ["☕", "💜", "🤬"]; 
 let emojiIndex = 0;
 
 function cycleEmojis() {
