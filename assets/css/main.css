@@ -124,8 +124,10 @@ header {
     height: 60px;
     line-height: 60px;
     padding: 0 50px;
+
     background-color: rgba(0, 0, 0, 0.5); /* 50% transparent black */
-    backdrop-filter: blur(10px); /* Frosted glass effect for supporting browsers */
+    -webkit-backdrop-filter: blur(10px); /* For Safari 9+ */
+    backdrop-filter: blur(10px); /* Standard syntax */
   }
 
 .logo a {
