@@ -30,7 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -66,17 +68,27 @@ html {
     padding: 0;
   }
 
-  /* General Styles */
+/* General Styles */
+
+html, body {
+  overflow-x: auto;
+}
+
 body {
-    height: 100%;
-    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Override default margin */
     background-color: #000; 
     color: #fff; 
   }
 
-  main {
-    min-height: 100vh; 
-    padding-bottom: 60px; 
+  
+
+main {
+   flex: 1; /*Allows the main content to expand and fill available space */
+   padding: 20px; /* Adjust as needed */
+   padding-bottom: 60px; 
   }
   
   /* a {
@@ -88,9 +100,9 @@ body {
     color: #AAFF00;
   } */
   
-  button {
-    /* Button styles */
-  }
+
+  /* Button styles */
+
 
   /* Layout Components */
 
@@ -122,7 +134,7 @@ header {
 }
 
 .logo a:hover {
-  color: #AAFF00;
+  color: #02FEE4;
 }
 
 @media screen and (min-width: 768px) {
@@ -158,7 +170,7 @@ header {
 }
 
 .nav-links a:hover {
-  color: #AAFF00;
+  color: #02FEE4;
 }
 
 @media screen and (min-width: 768px) {
@@ -173,20 +185,92 @@ header {
   }
 }
 
+.main-container {
+  min-width: 450px;
+}
+
 .main-content {
   display: flex;
   flex-direction: column; /* Keep column direction */
   align-items: flex-start; /* Align items to the start (left) horizontally */
   justify-content: flex-start; /* Align content to the start vertically */
   padding: 85px 1.5em 1.5em 1.5em; /* top, right, bottom, left */
+  margin-bottom: 20px;
   text-align: left; /* Left-align text for all screen sizes */
+}
+
+.button-container {
+  display: flex; /* This enables Flexbox for the container */
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically */
+  margin-top: 20px; /* Adds space above the button container */
+  margin-bottom: 20px; /* Adds space below the button container before the footer */
+  padding: 20px 0; /* Example padding; adjust as needed */
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #aa00ff;
+  border:3px solid #aa00ff;
+  border-radius:  0.25em;
+  padding: 0.5em 1.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 8px #aa00ff;
+
+  box-shadow: inset 0 0 0.5em 0 #aa00ff, 0 0 0.5em 0 currentColor;
+  position: relative;
+
+  transition: background-color 100ms linear;
+
+}
+  
+.button::before {
+  pointer-events: none;
+  content:"";
+  position: absolute;
+  background: #aa00ff;
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1.8em);
+  opacity: 0.7;
+}
+
+.button::after {
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em #aa00ff;
+  opacity: 0;
+  transition: opacity 100ms linear;
+}
+
+.button:hover,
+.button:focus {
+  background: #aa00ff;
+  color: #000;
+  text-shadow: none;
+}
+
+.button:hover::after {
+opacity: 1;
 }
 
 .main-content h1 {
   align-items: flex-start; /* Left-align items in flex container */
   font-size: 1.5em; /* Font size for h1 */
   font-weight: bold;
-  margin-bottom: 1em; /* Space below h1 */
+  margin-bottom: 1.5em; /* Space below h1 */
   color: #aa00ff;
 }
 
@@ -200,12 +284,12 @@ header {
 }
 
 .main-content a {
-  color: #fff;
+  color: #aa00ff;
   text-decoration: underline;
 }
 
 .main-content a:hover {
-  color: #AAFF00;
+  color: #02FEE4;
 }
 
 
@@ -226,7 +310,7 @@ header {
 
 @media screen and (min-width: 1024px) { /* Large screens (desktops) */
   .main-content {
-    padding: 150px 23em 23em 23em; /* Adjust padding for desktop screens */
+    padding: 150px 23em 2em 23em; /* Adjust padding for desktop screens */
   }
 
   .main-content h1 {
@@ -238,16 +322,14 @@ header {
   }
 }
 
-  
+
 footer {
   display: flex;
   flex-direction: column; /* Stack elements vertically on small screens */
   justify-content: center; /* Center content vertically */
   align-items: center; /* Center content horizontally */
-  /*  position: sticky; */
-  bottom: 0;
-  z-index: 100;
-  min-height: 60px; /* Use min-height */
+  min-height: 100%; /* Use min-height */
+  margin-top: auto; /* Pushes the footer */
   padding: 10px; /* Add padding */
   text-align: center; /* Center-align text */
   background-color: #000; /* Ensure visibility (change color as needed) */
