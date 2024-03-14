@@ -22,7 +22,7 @@ function updateCopyrightYear() {
   });
 
   // Handcoded with emojis animation
-const emojis = ["☕", "💜", "🤬"]; 
+const emojis = ["🍵", "💜", "🧘"]; 
 let emojiIndex = 0;
 
 function cycleEmojis() {
