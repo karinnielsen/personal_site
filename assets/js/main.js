@@ -34,3 +34,18 @@ function cycleEmojis() {
 }
 // Update emoji every 2 seconds (2000 milliseconds)
 setInterval(cycleEmojis, 2000);
+
+// Function to reset button and link states on page reload
+document.addEventListener("DOMContentLoaded", () => {
+  // Select both links and buttons
+  const elements = document.querySelectorAll('a, button');
+
+  // Add blur event listeners to reset the focus state
+  elements.forEach(element => {
+    element.addEventListener('blur', () => {
+      element.blur(); // Forces the element to lose focus
+    });
+  });
+});
+
+
