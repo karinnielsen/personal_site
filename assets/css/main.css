@@ -186,7 +186,7 @@ header {
 }
 
 .main-container {
-  min-width: 450px;
+  min-width: 350px;
 }
 
 .main-content {
@@ -195,7 +195,6 @@ header {
   align-items: flex-start; /* Align items to the start (left) horizontally */
   justify-content: flex-start; /* Align content to the start vertically */
   padding: 85px 1.5em 1.5em 1.5em; /* top, right, bottom, left */
-  /* margin-bottom: 20px; */
   text-align: left; /* Left-align text for all screen sizes */
 }
 
