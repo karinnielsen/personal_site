@@ -37,13 +37,21 @@ setInterval(cycleEmojis, 2000);
 
 // Function to reset button and link states on page reload
 document.addEventListener("DOMContentLoaded", () => {
-  // Select both links and buttons
   const elements = document.querySelectorAll('a, button');
 
-  // Add blur event listeners to reset the focus state
+  const resetFocus = (element) => {
+    element.blur(); // Forces the element to lose focus
+  };
+
   elements.forEach(element => {
+    // Listen for touch events as well
+    element.addEventListener('touchend', () => {
+      resetFocus(element);
+    });
+
+    // Existing blur event listener for desktop
     element.addEventListener('blur', () => {
-      element.blur(); // Forces the element to lose focus
+      resetFocus(element);
     });
   });
 });
