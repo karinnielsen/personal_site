@@ -208,6 +208,8 @@ header {
   padding: 20px 0; /* Example padding; adjust as needed */
 }
 
+/* See Tutorial for variants  https://www.youtube.com/watch?v=6xNcXwC6ikQ */
+
 .button {
   display: inline-block;
   cursor: pointer;
@@ -219,13 +221,12 @@ header {
   border-radius:  0.25em;
   padding: 0.5em 1.25em;
 
-  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 8px #aa00ff;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.8em #aa00ff;
 
   box-shadow: inset 0 0 0.5em 0 #aa00ff, 0 0 0.5em 0 currentColor;
   position: relative;
 
   transition: background-color 100ms linear;
-
 }
   
 .button::before {
