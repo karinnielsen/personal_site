@@ -278,8 +278,7 @@ opacity: 1;
 
 .main-content p {
   font-size: 1em; /* Font size for p */
-  font-family: sans-serif; /* Use a sans-serif font */
-  font-weight: 200; /* Lighter font weight */
+  font-weight: 200;
   line-height: 1.6; /* Increase line height for better readability */
   letter-spacing: 0.02em; /* Slight increase in letter spacing */
   margin-bottom: 1em; /* Space after each paragraph */
