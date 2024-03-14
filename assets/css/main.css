@@ -66,6 +66,7 @@ html {
   p {
     margin: 0;
     padding: 0;
+    color: #F5F5F5;
   }
 
 /* General Styles */
@@ -80,7 +81,7 @@ body {
     min-height: 100vh; /* Full viewport height */
     margin: 0; /* Override default margin */
     background-color: #000; 
-    color: #fff; 
+    color: #F5F5F5;
   }
 
   
@@ -130,7 +131,7 @@ header {
 .logo a {
   font-size: 20px; 
   font-weight: bold; 
-  color: #fff; 
+  color: #F5F5F5; 
   text-decoration: none; 
 }
 
@@ -166,7 +167,7 @@ header {
 }
 
 .nav-links a {
-  color: #fff; 
+  color: #F5F5F5; 
   text-decoration: none;
 }
 
