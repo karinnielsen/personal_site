@@ -28,7 +28,7 @@ let emojiIndex = 0;
 function cycleEmojis() {
   const handcodedInfo = document.getElementById('handcoded-info');
   if (handcodedInfo) {
-    handcodedInfo.textContent = `Handcoded with ${emojis[emojiIndex]} in London`;
+    handcodedInfo.textContent = `Crafted pixel by pixel with ${emojis[emojiIndex]} by me`;
     emojiIndex = (emojiIndex + 1) % emojis.length; // Cycle through the emojis
   }
 }
