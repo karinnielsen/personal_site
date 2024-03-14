@@ -195,7 +195,7 @@ header {
   align-items: flex-start; /* Align items to the start (left) horizontally */
   justify-content: flex-start; /* Align content to the start vertically */
   padding: 85px 1.5em 1.5em 1.5em; /* top, right, bottom, left */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-align: left; /* Left-align text for all screen sizes */
 }
 
@@ -204,7 +204,7 @@ header {
   justify-content: center; /* Centers the button horizontally */
   align-items: center; /* Centers the button vertically */
   margin-top: 20px; /* Adds space above the button container */
-  margin-bottom: 20px; /* Adds space below the button container before the footer */
+  margin-bottom: 150px; /* Adds space below the button container before the footer */
   padding: 20px 0; /* Example padding; adjust as needed */
 }
 
@@ -271,7 +271,7 @@ opacity: 1;
   align-items: flex-start; /* Left-align items in flex container */
   font-size: 1.5em; /* Font size for h1 */
   font-weight: bold;
-  margin-bottom: 1.5em; /* Space below h1 */
+  margin-bottom: 1em; /* Space below h1 */
   color: #aa00ff;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.1), 0 0 0.8em #aa00ff;
 }
@@ -296,7 +296,7 @@ opacity: 1;
 
 @media screen and (min-width: 768px) { /* Medium screens (tablets) */
   .main-content {
-    padding: 150px 6em 6em 6em; /* Adjust padding for larger screens */
+    padding: 100px 6em 1em 6em; /* Adjust padding for larger screens */
   }
 
   .main-content h1 {
