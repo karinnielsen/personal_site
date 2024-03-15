@@ -290,6 +290,7 @@ opacity: 1;
 .main-content a {
   color: #aa00ff;
   text-decoration: underline;
+  font-weight: 400;
 }
 
 .main-content a:hover {
