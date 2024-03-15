@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-
 }
 
 ol, ul {
@@ -92,16 +91,6 @@ main {
    padding-bottom: 60px; 
   }
   
-  /* a {
-    color: #fff; 
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #AAFF00;
-  } */
-  
-
   /* Button styles */
 
 
@@ -111,7 +100,9 @@ header {
     /* Header styles */
   }
   
-  /* Navigation styles */
+  /* -----------------------------------
+  Navigation styles
+  -------------------------------------- */
   nav {
     display: flex;
     justify-content: space-between;
@@ -141,18 +132,6 @@ header {
   color: #02FEE4;
 }
 
-@media screen and (min-width: 768px) {
-  .logo a {
-    font-size: 1.5em; 
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .logo a {
-    font-size: 2em;
-  }
-}
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -175,18 +154,6 @@ header {
 
 .nav-links a:hover {
   color: #02FEE4;
-}
-
-@media screen and (min-width: 768px) {
-  .nav-links {
-    font-size: 1.5em; 
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .nav-links {
-    font-size: 1.5em;
-  }
 }
 
 .main-container {
@@ -297,37 +264,6 @@ opacity: 1;
   color: #02FEE4;
 }
 
-
-@media screen and (min-width: 768px) { /* Medium screens (tablets) */
-  .main-content {
-    padding: 100px 6em 1em 6em; /* Adjust padding for larger screens */
-  }
-
-  .main-content h1 {
-    font-size: 2.5em; /* Larger font size for h1 on bigger screens */
-  }
-
-  .main-content p {
-    font-size: 1.2em; /* Slightly larger font size for p */
-  }
-}
-
-
-@media screen and (min-width: 1024px) { /* Large screens (desktops) */
-  .main-content {
-    padding: 150px 23em 2em 23em; /* Adjust padding for desktop screens */
-  }
-
-  .main-content h1 {
-    font-size: 3em; /* Even larger font size for h1 on desktop */
-  }
-
-  .main-content p {
-    font-size: 1.1em; /* Larger font size for p */
-  }
-}
-
-
 footer {
   display: flex;
   flex-direction: column; /* Stack elements vertically on small screens */
@@ -361,41 +297,89 @@ footer {
   font-style: italic;
 }
 
-@media screen and (min-width: 768px) {
-  footer {
-    flex-direction: row; /* Horizontal layout for larger screens */
-    justify-content: space-between; /* Space out content */
-    padding: 0 20px; /* Adjust padding */
-    min-height: 60px; /* Maintain min-height */
+  /* -----------------------------------
+ 768px + Medium screens (tablets)
+  -------------------------------------- */
+
+  @media screen and (min-width: 768px) {
+    .logo a {
+      font-size: 1.5em; 
+    }
+
+    .nav-links {
+      font-size: 1.5em; 
+    }
+
+    .main-content {
+      padding: 100px 6em 1em 6em; /* Adjust padding for larger screens */
+    }
+  
+    .main-content h1 {
+      font-size: 2.5em; /* Larger font size for h1 on bigger screens */
+    }
+  
+    .main-content p {
+      font-size: 1.2em; /* Slightly larger font size for p */
+    }
+
+    footer {
+      flex-direction: row; /* Horizontal layout for larger screens */
+      justify-content: space-between; /* Space out content */
+      padding: 0 20px; /* Adjust padding */
+      min-height: 60px; /* Maintain min-height */
+    }
+    
+    #handcoded-info {
+      order: 2; /* Middle */
+    }
+  
+    #last-updated {
+      order: 3; /* Right */
+    }
+  
+    #copyright {
+      order: 1; /* Left */
+    }
   }
   
-  #handcoded-info {
-    order: 2; /* Middle */
-  }
+  /* -----------------------------------
+ 1024px + Large screens (desktops)
+  -------------------------------------- */
 
-  #last-updated {
-    order: 3; /* Right */
-  }
+  @media screen and (min-width: 1024px) {
+    .logo a {
+      font-size: 2em;
+    }
 
-  #copyright {
-    order: 1; /* Left */
-  }
-}
+    .nav-links {
+      font-size: 1.5em;
+    }
 
-@media screen and (min-width: 1024px) {
-  footer {
-    padding: 0 10em; /* Adjust padding */
-  }
+    .main-content {
+      padding: 150px 23em 2em 23em; /* Adjust padding for desktop screens */
+    }
+  
+    .main-content h1 {
+      font-size: 3em; /* Even larger font size for h1 on desktop */
+    }
+  
+    .main-content p {
+      font-size: 1.1em; /* Larger font size for p */
+    }
 
-  #handcoded-info {
-    order: 2; /* Middle */
+    footer {
+      padding: 0 10em; /* Adjust padding */
+    }
+  
+    #handcoded-info {
+      order: 2; /* Middle */
+    }
+  
+    #last-updated {
+      order: 3; /* Right */
+    }
+  
+    #copyright {
+      order: 1; /* Left */
+    }
   }
-
-  #last-updated {
-    order: 3; /* Right */
-  }
-
-  #copyright {
-    order: 1; /* Left */
-  }
-}
